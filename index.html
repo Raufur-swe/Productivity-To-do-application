@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h3>My Activitie</h3>
+            <p>Stay Productive & Focused</p>
+        </header>
+        <!-- input task -->
+        <div class="task-add-section">
+            <input type="text" placeholder="Enter your task" id="input-task">
+            <button id="add-btn">add task</button>
+        </div>
+        <!-- adding task list -->
+        <ul id="task-list">
+            
+        </ul>
+        <!-- productivity-card -->
+        <div class="focus-tool">
+            <!-- focus section -->
+            <div class="focus-section">
+                <h4>Focus-timer</h4>
+                <div class="timer-input-section">
+                    <input type="number" id="timer-input" min="1">
+                    <span>min</span>
+                </div>
+                <div class="timer-display" id="focus-display">00:00</div>
+                <div id="timer-controls">
+                    <button id="focus-start-btn">Start</button>
+                    <button id="focus-pause-btn">Pause</button>
+                    <button id="focus-reset-btn">Reset</button>
+                </div>
+            </div>
+            <!-- stop watch section -->
+            <div class="stopwatch-section">
+                <div class="stopwatch-timer">
+                    <h4>stop-watch</h4>
+                    <div class="timer-display" id="stopwatch-display">00:00:00</div>
+                    <div id="timer-controls">
+                        <button id="stopwatch-start-btn">Start</button>
+                        <button id="stopwatch-pause-btn">Pause</button>
+                        <button id="stopwatch-reset-btn">Reset</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+
+</html>
